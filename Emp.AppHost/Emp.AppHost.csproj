@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>c564269c-5243-4d9a-9f21-d4ba62b4c259</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0"/>
+        <PackageReference Include="Aspire.Hosting.MySql" Version="9.0.0" />
+        <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Emp.Api\Emp.Api.csproj" />
+      <ProjectReference Include="..\Emp.DatabaseManager\Emp.DatabaseManager.csproj" />
+    </ItemGroup>
+
+</Project>

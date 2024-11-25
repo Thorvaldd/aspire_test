@@ -1,0 +1,30 @@
+{
+  "projectPath": ".",
+  "outputPath": "aspirate-output",
+  "containerImageTags": [
+    "latest"
+  ],
+  "containerBuilder": "docker",
+  "outputFormat": "compose",
+  "privateRegistryEmail": "aspir8@aka.ms",
+  "includeDashboard": false,
+  "secrets": {
+    "salt": "R8Cucqgy7fzDX3DV",
+    "hash": "IFaDGYfuV5QMO5tdsJTrNCcRzXU0hmlc0Vc/jwzzDso=",
+    "secrets": {
+      "mysql-password": {
+        "value": "R8Cucqgy7fzDX3DVTIYJrTofie6Lxs3P7siNzTRVolXfH4RM9pfKh1rfV/cUL92s/RY="
+      },
+      "mysql": {},
+      "employees": {},
+      "empployeedbmanager": {
+        "ConnectionStrings__employees": "R8Cucqgy7fzDX3DVMvimAwQbJKw6BZkR3y5JUEZU8UaMAMlU56/RggLMUNwYeqzQokc3FijHJVhBvLJcTXyw24XwSuGOerd12nFqdVkIeXNExR5f7BHDfkDQMhlk9bFnkfynEmxfG2Nn8\u002BRq14kjwjOM"
+      },
+      "employeeapi": {
+        "ConnectionStrings__employees": "R8Cucqgy7fzDX3DVMvimAwQbJKw6BZkR3y5JUEZU8UaMAMlU56/RggLMUNwYeqzQokc3FijHJVhBvLJcTXyw24XwSuGOerd12nFqdVkIeXNExR5f7BHDfkDQMhlk9bFnkfynEmxfG2Nn8\u002BRq14kjwjOM"
+      },
+      "employee-portal": {}
+    }
+  },
+  "processAllComponents": true
+}

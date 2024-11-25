@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Emp.EmployeesDb\Emp.EmployeesDb.csproj" />
+      <ProjectReference Include="..\Emp.ServiceDefaults\Emp.ServiceDefaults.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspire.MySqlConnector" Version="9.0.0" />
+      <PackageReference Include="Evolve" Version="3.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Scripts\V1__Init_tables.sql">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+      <None Update="BatchSql\V2__SeedTables.sql">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
