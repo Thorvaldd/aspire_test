@@ -1,0 +1,4 @@
+[submodule "employee-portal"]
+    path = employee-portal
+    url = https://github.com/Thorvaldd/employee_portal.git
+
